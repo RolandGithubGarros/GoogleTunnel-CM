@@ -1288,9 +1288,9 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fak
 			}
 			addresses = addresses.concat('127.0.0.1:1234#CFnat');
 			if (hostName.includes(".workers.dev")) {
-				addressesnotls = addressesnotls.concat(cfips.map(cidr => generateRandomIPFromCIDR(cidr) + '#Shangri-La'));
+				addressesnotls = addressesnotls.concat(cfips.map(cidr => generateRandomIPFromCIDR(cidr) + '#travel.shangrilacom.us.kg'));
 			} else {
-				addresses = addresses.concat(cfips.map(cidr => generateRandomIPFromCIDR(cidr) + '#Shangri-La'));
+				addresses = addresses.concat(cfips.map(cidr => generateRandomIPFromCIDR(cidr) + '#travel.shangrilacom.us.kg'));
 			}
 		}
 	}
